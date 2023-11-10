@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        div{
+            background-color: red; 
+        }
+        .red{
+             background-color: blue;
+        }
+        #blue{
+            background-color: pink;
+        }
+        div > p{
+            background-color: navajowhite;
+            color: aliceblue;
+        }
+        div p{
+            background-color: aqua;
+
+        }
+        a:visited{
+            color: green;
+        }
+        a:link{
+            color: yellow;
+        }
+        a:active{
+            background-color: blue;
+        }
+        a:hover{
+            background-color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="blue"> This is a div</div>
+    <div class="red">
+        This is another div 
+    </div>
+    <div>
+        <p>This is a para inside of a div </p>
+    </div>
+    <div>
+        <article>
+            <p>This is a para inside article inside div</p>
+        </article>
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook.com">Go to facebook</a>
+</body>
+
+</html>
