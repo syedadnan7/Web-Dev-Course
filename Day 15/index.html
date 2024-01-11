@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box:first-child{
+            background-color: aqua;
+        }
+        .box::first-line{
+            color: rgb(250, 27, 27);
+        }
+        .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+            [data-color="primary"]
+            {
+                padding-top: 14px;
+            }
+            p,a,.box{
+                font: 222px;
+            }
+            .box:nth-child(even)
+            {
+                background-color: yellow;
+            }
+            .boxes::before{
+                content: "adnan is good";
+            }
+            .boxes::after{
+                content: "adnan is also good"
+            }
+            ::selection{
+                background-color: black;
+                color: white;
+            }
+            input::placeholder{
+                color: black;
+            }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">This is box 1</div>
+        <div class="box">This is box 2</div>
+        <div class="box">This is box 3</div>
+        <input type="text" placeholder="Enter your name here">
+    </div>
+</body>
+</html>
