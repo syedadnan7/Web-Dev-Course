@@ -1,0 +1,140 @@
+.logo{
+    width: 30px;
+    height: 13px;
+}
+.logo img{
+    height: 85px;
+    width: 180px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.right ul{
+    display: flex ;
+    margin-top: 35px;
+
+}
+.right ul li{
+    list-style: none;
+    padding: 15px;
+    display: flex;
+    align-items: center'
+}
+.container {
+    border: 2px solid black;
+    display: block;
+    height: 20vh;
+    width: 80vw;
+}
+.first{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 43px;
+    margin: 43px;
+}
+.first span{
+    font-size: 40px;
+    margin: 23px;
+}
+button{
+    background: rgb(101, 191, 221);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 16px;
+    font-weight: 700;
+}
+.main{
+    display: flex;
+    width: 59vw;
+    font-size: 25px;
+    text-align: center;
+}
+.blue{
+    background: rgb(101, 191, 221);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 16px;
+    font-weight: 700
+}
+.download{
+    font-size:9px;;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*justify-content: center;*/
+    justify-items: center;
+    row-gap: 20px;
+    column-gap: 5px;
+    max-width: 80vw;
+}
+.item{
+    background-color:rgb(236, 236, 236);
+    padding: 23px;
+}
+.lang{
+    display: grid;
+    font-weight: 600;
+    font-size: 23px;
+    text-align: center;
+    padding-bottom: 33px;
+    padding-top: 5px;
+    gap: 23px;
+    margin: 0px 12px 12px 12px;
+}
+.blue{  
+    background: rgb(101, 191, 221);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 16px;
+    font-weight: 700;
+}
+.green{
+    background-color: rgb(85, 151, 85);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 16px;
+    font-weight: 700;
+}
+.german{
+    font-size: 14px;
+}
+.item1{
+    background-color:rgb(236, 236, 236);
+}
+.btns{
+    padding-top: 64px;
+    margin: 23px;
+    
+}
+.lang1{
+    display: grid;
+    font-weight: 600;
+    font-size: 23px;
+    text-align: center;
+
+    padding-top: 5px;
+    gap: 23px;
+    margin: 23px 12px 12px 12px;
+}
+main{
+    display: grid;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 1145px){
+    .grid{
+        grid-template-columns: 1fr; 
+    }
+}
