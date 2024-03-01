@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Exercise 8</title>
+    <style>
+        .parent{
+            background-color: red;
+            height: 80vh;
+            width: 70vw;
+            position: relative;
+        }
+        .child{
+            background-color: blue;
+            height: 140px;
+            width: 140px;
+            position: absolute;
+            border-radius: 70%;
+            bottom: 0;
+            left: 0;
+            animation: animateX  3s linear infinite , animateY 1s ease-out alternate infinite;
+        }
+        @keyframes animateX {
+                from{
+                    left: 0%;
+            }
+            to{
+                    left: 100%;
+            }
+        }
+        @keyframes animateY {
+            from{
+                bottom: 0%;
+            }
+            to{
+                bottom: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>
